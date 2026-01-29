@@ -129,7 +129,7 @@
 
 /* Benefits Section */
 .bg-light {
-    background-color: #F1F5F9;
+    background-color: var(--color-background);
 }
 
 .section-subtitle {
@@ -210,14 +210,14 @@
 
 /* CTA Section */
 .cta-section {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+    background-color: #0F172A;
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
 }
 
 .cta-section h2 {
-    color: var(--color-white);
+    color: #FFFFFF;
 }
 
 .cta-section p {

@@ -77,6 +77,10 @@
     color: var(--color-text);
 }
 
+.bg-light {
+    background-color: var(--color-background);
+}
+
 @media (max-width: 768px) {
     .about-grid {
         grid-template-columns: 1fr;

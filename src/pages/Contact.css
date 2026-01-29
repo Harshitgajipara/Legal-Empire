@@ -141,6 +141,11 @@ textarea:focus {
 .map-content h3 {
     margin-top: var(--spacing-sm);
     margin-bottom: var(--spacing-xs);
+    color: #0F172A;
+}
+
+.map-content p {
+    color: #334155;
 }
 
 @media (max-width: 768px) {

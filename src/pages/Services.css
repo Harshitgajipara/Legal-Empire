@@ -129,6 +129,10 @@
     color: var(--color-text-light);
 }
 
+.bg-light {
+    background-color: var(--color-background);
+}
+
 @media (max-width: 768px) {
     .process-steps {
         flex-direction: column;
