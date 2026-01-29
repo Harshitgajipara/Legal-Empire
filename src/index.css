@@ -1,0 +1,245 @@
+/* Fonts loaded via index.html for better performance */
+
+:root {
+  /* Colors */
+  --color-primary: #0F172A;
+  /* Slate 900 */
+  --color-primary-light: #1E293B;
+  /* Slate 800 */
+  --color-accent: #C5A059;
+  /* Gold */
+  --color-accent-hover: #D4AF37;
+  --color-background: #F8FAFC;
+  /* Slate 50 */
+  --color-text: #334155;
+  /* Slate 700 */
+  --color-text-light: #64748B;
+  /* Slate 500 */
+  --color-white: #FFFFFF;
+  --color-border: #E2E8F0;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  /* 8px */
+  --spacing-sm: 1rem;
+  /* 16px */
+  --spacing-md: 1.5rem;
+  /* 24px */
+  --spacing-lg: 2rem;
+  /* 32px */
+  --spacing-xl: 3rem;
+  /* 48px */
+  --spacing-2xl: 5rem;
+  /* 80px */
+  --spacing-3xl: 8rem;
+  /* 128px */
+
+  /* Container */
+  --container-width: 1200px;
+  --header-height: 80px;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+  --color-primary: #FFFFFF;
+  /* Pure White - Maximum contrast for headings */
+  --color-primary-light: #F1F5F9;
+  /* Very Light Slate - Subheadings */
+  --color-accent: #FDB813;
+  /* Bright Gold - High visibility accent */
+  --color-accent-hover: #FFD700;
+  /* Brighter Gold on hover */
+  --color-background: #0F172A;
+  /* Slate 900 - Dark background */
+  --color-text: #E2E8F0;
+  /* Slate 200 - Bright body text */
+  --color-text-light: #CBD5E1;
+  /* Slate 300 - Secondary text */
+  --color-white: #1E293B;
+  /* Slate 800 - Cards/sections */
+  --color-border: #475569;
+  /* Slate 600 - Visible borders */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section {
+  padding: var(--spacing-2xl) 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 4px;
+  /* Minimal radius */
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-accent);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+/* Navbar */
+.navbar {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link.active {
+  color: var(--color-accent);
+}
