@@ -2,13 +2,15 @@
 
 :root {
   /* Colors */
+  /* Dark Gold for text on white background (contrast > 4.5:1) */
+  --color-accent-text: #8E7031;
   --color-primary: #0F172A;
   /* Slate 900 */
-  --color-primary-light: #1E293B;
-  /* Slate 800 */
+  --color-primary-light: #334155;
+  /* Slate 700 */
   --color-accent: #C5A059;
   /* Gold */
-  --color-accent-hover: #D4AF37;
+  --color-accent-hover: #B89246;
   --color-background: #F8FAFC;
   /* Slate 50 */
   --color-text: #334155;
@@ -51,6 +53,8 @@
   /* Very Light Slate - Subheadings */
   --color-accent: #FDB813;
   /* Bright Gold - High visibility accent */
+  --color-accent-text: #FDB813;
+  /* Same bright gold for dark mode */
   --color-accent-hover: #FFD700;
   /* Brighter Gold on hover */
   --color-background: #0F172A;
@@ -151,7 +155,7 @@ button {
 }
 
 .text-accent {
-  color: var(--color-accent);
+  color: var(--color-accent-text);
 }
 
 .text-primary {
@@ -186,29 +190,33 @@ button {
   gap: var(--spacing-md);
 }
 
+/* Button Styles */
 .btn {
   display: inline-block;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
+  padding: 12px 24px;
   border-radius: 4px;
-  /* Minimal radius */
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.9rem;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .btn-primary {
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: #FFFFFF;
 }
 
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
   transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-outline {
+  background-color: transparent;
   border: 2px solid var(--color-accent);
   color: var(--color-primary);
 }
@@ -242,4 +250,14 @@ button {
 
 .nav-link.active {
   color: var(--color-accent);
+}
+
+/* Dark Mode Button Text Fixes */
+[data-theme="dark"] .btn-outline {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  color: #0F172A;
 }

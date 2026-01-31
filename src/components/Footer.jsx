@@ -42,7 +42,7 @@ const Footer = () => {
                         <ul className="contact-list">
                             <li>
                                 <Phone size={18} className="contact-icon" />
-                                <span>(555) 123-4567</span>
+                                <span>+91 98989 83573</span>
                             </li>
                             <li>
                                 <Mail size={18} className="contact-icon" />
@@ -64,8 +64,8 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p>&copy; {new Date().getFullYear()} Legal Empire. All rights reserved.</p>
                     <div className="legal-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
+                        <a href="/privacy">Privacy Policy</a>
+                        <a href="/terms">Terms of Service</a>
                     </div>
                 </div>
             </div>

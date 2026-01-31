@@ -135,7 +135,7 @@ const Home = () => {
                     <p>Contact us today for a free, confidential consultation. Let us fight for you.</p>
                     <div className="cta-buttons">
                         <Link to="/contact" className="btn btn-primary">Schedule Consultation</Link>
-                        <a href="tel:5551234567" className="btn btn-outline-light">Call (555) 123-4567</a>
+                        <a href="tel:5551234567" className="btn btn-outline-light">Call +91 98989 83573</a>
                     </div>
                 </div>
             </section>

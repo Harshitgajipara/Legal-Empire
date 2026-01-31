@@ -95,3 +95,13 @@
     display: flex;
     gap: var(--spacing-md);
 }
+
+/* Dark Mode Footer Text Fix */
+[data-theme="dark"] .footer a,
+[data-theme="dark"] .contact-list li {
+    color: #1E293B;
+}
+
+[data-theme="dark"] .footer a:hover {
+    color: #0F172A;
+}

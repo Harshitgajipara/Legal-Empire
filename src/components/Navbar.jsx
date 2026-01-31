@@ -12,6 +12,10 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     const isActive = (path) => {
         return location.pathname === path ? 'active' : '';
     };
@@ -39,15 +43,18 @@ const Navbar = () => {
                     {isOpen ? <X size={24} /> : <Menu size={24} />}
                 </div>
 
+                {/* Mobile Menu Backdrop */}
+                {isOpen && <div className="mobile-menu-backdrop" onClick={closeMenu}></div>}
+
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className="mobile-menu">
-                        <Link to="/" className={`nav-link ${isActive('/')}`} onClick={toggleMenu}>Home</Link>
-                        <Link to="/about" className={`nav-link ${isActive('/about')}`} onClick={toggleMenu}>About Us</Link>
-                        <Link to="/services" className={`nav-link ${isActive('/services')}`} onClick={toggleMenu}>Services</Link>
-                        <Link to="/contact" className={`nav-link ${isActive('/contact')}`} onClick={toggleMenu}>Contact</Link>
+                        <Link to="/" className={`nav-link ${isActive('/')}`} onClick={closeMenu}>Home</Link>
+                        <Link to="/about" className={`nav-link ${isActive('/about')}`} onClick={closeMenu}>About Us</Link>
+                        <Link to="/services" className={`nav-link ${isActive('/services')}`} onClick={closeMenu}>Services</Link>
+                        <Link to="/contact" className={`nav-link ${isActive('/contact')}`} onClick={closeMenu}>Contact</Link>
                         <ThemeToggle />
-                        <Link to="/contact" className="btn btn-primary" onClick={toggleMenu}>Free Consultation</Link>
+                        <Link to="/contact" className="btn btn-primary" onClick={closeMenu}>Free Consultation</Link>
                     </div>
                 )}
             </div>

@@ -77,14 +77,14 @@ const About = () => {
                         <div className="history-text">
                             <h2>Our History</h2>
                             <p>
-                                Founded in 1995 by Senior Partner Robert Thorne, Legal Empire began as a small boutique firm
+                                Founded in 1995 by Senior Partner Kishan Patel, Legal Empire began as a small boutique firm
                                 specializing in criminal defense. Over the decades, we have expanded our practice areas and
                                 team, becoming one of the most respected legal firms in the region.
                             </p>
                             <ul className="milestones-list">
                                 <li>
                                     <CheckCircle size={20} className="text-accent" />
-                                    <span><strong>1995:</strong> Firm founded by Robert Thorne</span>
+                                    <span><strong>1995:</strong> Firm founded by Kishan Patel</span>
                                 </li>
                                 <li>
                                     <CheckCircle size={20} className="text-accent" />

@@ -115,7 +115,15 @@ const Contact = () => {
                         <MapPin size={48} className="text-accent" />
                         <h3>Visit Our Office</h3>
                         <p>123 Justice Blvd, Suite 100, Legal City, ST 12345</p>
-                        <a href="#" className="btn btn-outline" style={{ marginTop: '1rem' }}>Get Directions (Open Maps)</a>
+                        <a
+                            href="https://www.google.com/maps/place/Aaryan+Eminent/@23.0758731,72.5300686,3a,75y/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICEwvf29gE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAwepu1SxSVvzHmI-elndIKayCzG2I5yCQIEnPmA2nYOrXo1aJOwBRgGUwe5FtI4Q3KEe3EEBPa7cPJ6XJQfrAA8avZwlxv52ha_uZGwytBQw0AFOU4eCdL_VnQ1B7nGF3K4h-GF33wQ%3Dw86-h105-k-no!7i2448!8i3005!4m22!1m14!1m10!4m9!1m3!2m2!1d72.5249054!2d23.0748834!1m4!2m2!1d72.524724!2d23.0742348!4e1!2m2!3m1!5e2!3m6!1s0x395e83ac7a3d3b49:0x303c4234b772638e!8m2!3d23.0761966!4d72.5303467!10e5!16s%2Fg%2F11fd7f2qtt?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-outline"
+                            style={{ marginTop: '1rem' }}
+                        >
+                            Get Directions (Open Maps)
+                        </a>
                     </div>
                 </div>
             </section>
