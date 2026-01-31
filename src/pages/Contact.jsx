@@ -12,8 +12,8 @@ const Contact = () => {
             {/* Page Header */}
             <section className="page-header contact-header">
                 <div className="container">
-                    <h1>Contact Us</h1>
-                    <p>We are here to help. Reach out to us today.</p>
+                    <h1 className="animate-fade-up">Contact Us</h1>
+                    <p className="animate-fade-up">We are here to help. Reach out to us today.</p>
                 </div>
             </section>
 
@@ -21,7 +21,7 @@ const Contact = () => {
                 <div className="container">
                     <div className="contact-container">
                         {/* Contact Info */}
-                        <div className="contact-info">
+                        <div className="contact-info animate-fade-up">
                             <h2>Get In Touch</h2>
                             <p className="mb-lg">
                                 Fill out the form or contact us directly. We respond to all inquiries within 24 hours.
@@ -65,7 +65,7 @@ const Contact = () => {
                         </div>
 
                         {/* Contact Form */}
-                        <div className="contact-form-wrapper">
+                        <div className="contact-form-wrapper animate-fade-in">
                             <h2>Send us a Message</h2>
                             <form className="contact-form" onSubmit={handleSubmit}>
                                 <div className="form-group">
@@ -109,14 +109,14 @@ const Contact = () => {
             </section>
 
             {/* Map Placeholder */}
-            <section className="map-section">
+            <section className="map-section animate-fade-in">
                 <div className="map-placeholder">
                     <div className="map-content">
                         <MapPin size={48} className="text-accent" />
                         <h3>Visit Our Office</h3>
                         <p>123 Justice Blvd, Suite 100, Legal City, ST 12345</p>
                         <a
-                            href="https://www.google.com/maps/place/Aaryan+Eminent/@23.0758731,72.5300686,3a,75y/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICEwvf29gE!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAwepu1SxSVvzHmI-elndIKayCzG2I5yCQIEnPmA2nYOrXo1aJOwBRgGUwe5FtI4Q3KEe3EEBPa7cPJ6XJQfrAA8avZwlxv52ha_uZGwytBQw0AFOU4eCdL_VnQ1B7nGF3K4h-GF33wQ%3Dw86-h105-k-no!7i2448!8i3005!4m22!1m14!1m10!4m9!1m3!2m2!1d72.5249054!2d23.0748834!1m4!2m2!1d72.524724!2d23.0742348!4e1!2m2!3m1!5e2!3m6!1s0x395e83ac7a3d3b49:0x303c4234b772638e!8m2!3d23.0761966!4d72.5303467!10e5!16s%2Fg%2F11fd7f2qtt?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+                            href="https://www.google.com/maps/search/?api=1&query=123+Justice+Blvd+Suite+100+Legal+City+ST+12345"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-outline"

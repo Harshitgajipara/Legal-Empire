@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-                <div className="footer-grid">
-                    <div className="footer-brand">
+                <div className="footer-grid animate-stagger-container">
+                    <div className="footer-brand animate-stagger-item">
                         <Link to="/" className="logo">
                             <Scale className="logo-icon" size={28} />
                             <span className="logo-text">Legal Empire</span>
@@ -17,7 +17,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div className="footer-links">
+                    <div className="footer-links animate-stagger-item">
                         <h3>Quick Links</h3>
                         <ul>
                             <li><Link to="/">Home</Link></li>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="footer-services">
+                    <div className="footer-services animate-stagger-item">
                         <h3>Practice Areas</h3>
                         <ul>
                             <li>Corporate Law</li>
@@ -37,7 +37,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="footer-contact">
+                    <div className="footer-contact animate-stagger-item">
                         <h3>Contact Us</h3>
                         <ul className="contact-list">
                             <li>

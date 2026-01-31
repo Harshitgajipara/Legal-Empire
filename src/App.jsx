@@ -10,10 +10,19 @@ import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 
+import { useScrollAnimations } from './hooks/useScrollAnimations';
+
+// Component to handle animations based on route changes
+const AnimationController = () => {
+  useScrollAnimations();
+  return null;
+};
+
 function App() {
   return (
     <ThemeProvider>
       <Router>
+        <AnimationController />
         <div className="app-container">
           <ScrollToTop />
           <Navbar />

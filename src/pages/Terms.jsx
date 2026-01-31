@@ -4,14 +4,14 @@ const Terms = () => {
             {/* Page Header */}
             <section className="page-header" style={{ padding: '4rem 0', backgroundColor: '#0F172A', color: '#FFFFFF', textAlign: 'center' }}>
                 <div className="container">
-                    <h1>Terms and Conditions</h1>
-                    <p style={{ maxWidth: '600px', margin: '0 auto', color: '#E2E8F0' }}>
+                    <h1 className="animate-fade-up">Terms and Conditions</h1>
+                    <p className="animate-fade-up" style={{ maxWidth: '600px', margin: '0 auto', color: '#E2E8F0' }}>
                         Please read these terms carefully before using our services.
                     </p>
                 </div>
             </section>
 
-            <div className="section">
+            <div className="section animate-fade-up">
                 <div className="container" style={{ maxWidth: '800px' }}>
                     <p className="text-sm text-light mb-lg">Last Updated: January 1, 2024</p>
 

@@ -5,6 +5,13 @@
     width: 100%;
 }
 
+.logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    padding: 5px 0;
+}
+
 .logo {
     display: flex;
     align-items: center;

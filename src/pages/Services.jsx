@@ -55,17 +55,17 @@ const Services = () => {
             {/* Page Header */}
             <section className="page-header services-header">
                 <div className="container">
-                    <h1>Practice Areas</h1>
-                    <p>Comprehensive legal solutions tailored to your needs.</p>
+                    <h1 className="animate-fade-up">Practice Areas</h1>
+                    <p className="animate-fade-up">Comprehensive legal solutions tailored to your needs.</p>
                 </div>
             </section>
 
             {/* Services Grid */}
             <section className="section">
                 <div className="container">
-                    <div className="services-main-grid">
+                    <div className="services-main-grid animate-stagger-container">
                         {servicesData.map((service, index) => (
-                            <div key={index} className="service-detail-card">
+                            <div key={index} className="service-detail-card animate-stagger-item">
                                 <div className="service-icon-wrapper">
                                     {service.icon}
                                 </div>
@@ -88,31 +88,31 @@ const Services = () => {
             {/* Process Section */}
             <section className="section bg-light">
                 <div className="container">
-                    <div className="text-center mb-xl">
+                    <div className="text-center mb-xl animate-fade-up">
                         <h2>Our Process</h2>
                         <p>How we handle your case from specialized start to finish.</p>
                     </div>
 
-                    <div className="process-steps">
-                        <div className="step">
+                    <div className="process-steps animate-stagger-container">
+                        <div className="step animate-stagger-item">
                             <div className="step-number">1</div>
                             <h4>Consultation</h4>
                             <p>We meet to discuss your situation and evaluate your legal options.</p>
                         </div>
-                        <div className="step-divider"></div>
-                        <div className="step">
+                        <div className="step-divider animate-fade-in"></div>
+                        <div className="step animate-stagger-item">
                             <div className="step-number">2</div>
                             <h4>Strategy</h4>
                             <p>We develop a tailored legal strategy designed to achieve your goals.</p>
                         </div>
-                        <div className="step-divider"></div>
-                        <div className="step">
+                        <div className="step-divider animate-fade-in"></div>
+                        <div className="step animate-stagger-item">
                             <div className="step-number">3</div>
                             <h4>Execution</h4>
                             <p>We aggressively advocate for you, keeping you informed at every stage.</p>
                         </div>
-                        <div className="step-divider"></div>
-                        <div className="step">
+                        <div className="step-divider animate-fade-in"></div>
+                        <div className="step animate-stagger-item">
                             <div className="step-number">4</div>
                             <h4>Resolution</h4>
                             <p>We fight for the best possible outcome for your case.</p>
@@ -123,7 +123,7 @@ const Services = () => {
 
             {/* CTA */}
             <section className="section text-center">
-                <div className="container">
+                <div className="container animate-fade-up">
                     <h2>Need Legal Assistance?</h2>
                     <p className="mb-md">Don't navigate the legal system alone. We are here to help.</p>
                     <Link to="/contact" className="btn btn-primary">Get a Free Case Evaluation</Link>
