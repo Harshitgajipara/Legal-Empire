@@ -1,107 +1,130 @@
 .footer {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: var(--spacing-2xl) 0 var(--spacing-lg);
-    margin-top: auto;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-2xl) 0 var(--spacing-lg);
+  margin-top: auto;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-xl);
-    margin-bottom: var(--spacing-xl);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
 }
 
 .footer-brand .logo-text,
 .footer-brand .logo-icon {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .footer-desc {
-    color: var(--color-text-light);
-    /* Will need to adjust this color for dark bg */
-    color: #94a3b8;
-    /* Slate 400 */
-    margin-top: var(--spacing-sm);
-    max-width: 300px;
+  color: var(--color-text-light);
+  /* Will need to adjust this color for dark bg */
+  color: #94a3b8;
+  /* Slate 400 */
+  margin-top: var(--spacing-sm);
+  max-width: 300px;
 }
 
 .footer h3 {
-    color: var(--color-accent);
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-md);
+  color: var(--color-accent);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .footer ul li {
-    margin-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
 }
 
 .footer a {
-    color: #94a3b8;
+  color: #94a3b8;
 }
 
 .footer a:hover {
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 .contact-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--spacing-sm);
-    color: #94a3b8;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  color: #94a3b8;
 }
 
 .contact-icon {
-    color: var(--color-accent);
-    margin-top: 4px;
+  color: var(--color-accent);
+  margin-top: 4px;
 }
 
 .social-links {
-    display: flex;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
 }
 
 .social-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid #94a3b8;
-    transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #94a3b8;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-links a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+  z-index: -1;
+}
+
+.social-links a:hover::before {
+  width: 40px;
+  height: 40px;
 }
 
 .social-links a:hover {
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
-    color: var(--color-primary);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-primary);
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(197, 160, 89, 0.3);
 }
 
 .footer-bottom {
-    border-top: 1px solid #334155;
-    padding-top: var(--spacing-md);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--spacing-sm);
-    color: #64748B;
-    font-size: 0.9rem;
+  border-top: 1px solid #334155;
+  padding-top: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  color: #64748b;
+  font-size: 0.9rem;
 }
 
 .legal-links {
-    display: flex;
-    gap: var(--spacing-md);
+  display: flex;
+  gap: var(--spacing-md);
 }
 
 /* Dark Mode Footer Text Fix */
 [data-theme="dark"] .footer a,
 [data-theme="dark"] .contact-list li {
-    color: #1E293B;
+  color: #1e293b;
 }
 
 [data-theme="dark"] .footer a:hover {
-    color: #0F172A;
+  color: #0f172a;
 }
