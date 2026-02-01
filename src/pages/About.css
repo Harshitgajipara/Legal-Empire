@@ -1,88 +1,229 @@
 .page-header {
-    background-color: #0F172A;
-    color: #FFFFFF;
-    padding: var(--spacing-3xl) 0;
-    text-align: center;
-    background-image: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    background-size: cover;
-    background-position: center;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: var(--spacing-3xl) 0;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.9),
+      rgba(15, 23, 42, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
 .page-header h1 {
-    color: #FFFFFF;
-    margin-bottom: var(--spacing-sm);
+  color: #ffffff;
+  margin-bottom: var(--spacing-sm);
 }
 
 .page-header p {
-    color: #E2E8F0;
-    font-size: 1.25rem;
-    max-width: 600px;
-    margin: 0 auto;
+  color: #e2e8f0;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-2xl);
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
 }
 
 .section-label {
-    display: inline-block;
-    color: var(--color-accent);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-size: 0.85rem;
-    margin-bottom: var(--spacing-sm);
+  display: inline-block;
+  color: var(--color-accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  margin-bottom: var(--spacing-sm);
 }
 
 .about-image img {
-    border-radius: 8px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .rounded-image {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
 }
 
 .value-card {
-    background-color: var(--color-white);
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    border-top: 4px solid var(--color-accent);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border-top: 4px solid var(--color-accent);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .value-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
 }
 
 .milestones-list {
-    margin-top: var(--spacing-md);
+  margin-top: var(--spacing-md);
 }
 
 .milestones-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
-    color: var(--color-text);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
 }
 
 .bg-light {
-    background-color: var(--color-background);
+  background-color: var(--color-background);
+}
+
+/* Legacy Grid Styling */
+.legacy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.legacy-item {
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: 8px;
+  border-left: 4px solid var(--color-accent);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.legacy-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(197, 160, 89, 0.1);
+  border-left-color: var(--color-accent-hover);
+}
+
+.legacy-item h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.2rem;
+}
+
+.legacy-item p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Legacy Item Scroll Reveal Animation */
+.legacy-item.scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.legacy-item.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Courts List Section */
+.legacy-courts-section {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  padding: var(--spacing-xl);
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.legacy-courts-section p {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.courts-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.court-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: 6px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-left: 4px solid var(--color-accent);
+}
+
+.court-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 5px 15px rgba(197, 160, 89, 0.1);
+}
+
+.court-item svg {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.court-item span {
+  font-weight: 500;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+/* Court Item Scroll Reveal Animation */
+.court-item.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.court-item.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for court items */
+.court-item.scroll-reveal:nth-child(1).active {
+  animation-delay: 0s;
+}
+
+.court-item.scroll-reveal:nth-child(2).active {
+  animation-delay: 0.05s;
+}
+
+.court-item.scroll-reveal:nth-child(3).active {
+  animation-delay: 0.1s;
+}
+
+.court-item.scroll-reveal:nth-child(4).active {
+  animation-delay: 0.15s;
+}
+
+.court-item.scroll-reveal:nth-child(5).active {
+  animation-delay: 0.2s;
 }
 
 @media (max-width: 768px) {
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .legacy-grid {
+    grid-template-columns: 1fr;
+  }
 }

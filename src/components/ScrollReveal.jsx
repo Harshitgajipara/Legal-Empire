@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 /**
  * ScrollReveal Hook - Implements Intersection Observer for smooth scroll animations
@@ -6,7 +7,18 @@ import { useEffect } from "react";
  * Add 'active' class when element enters viewport (once only)
  */
 export const useScrollReveal = () => {
+  const location = useLocation();
+
   useEffect(() => {
+    // Reset all active animations when page changes
+    document
+      .querySelectorAll(
+        ".scroll-reveal.active, .scroll-reveal-left.active, .scroll-reveal-right.active, .scroll-reveal-stagger.active, .text-reveal.active, .court-list-item.active, .court-item.active"
+      )
+      .forEach((el) => {
+        el.classList.remove("active");
+      });
+
     // Create Intersection Observer options with optimized threshold
     const observerOptions = {
       threshold: [0, 0.1, 0.25], // Trigger at multiple points as element enters viewport
@@ -33,7 +45,7 @@ export const useScrollReveal = () => {
 
     // Observe all elements with scroll-reveal classes
     const scrollRevealElements = document.querySelectorAll(
-      ".scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-stagger, .text-reveal, .court-list-item"
+      ".scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-stagger, .text-reveal, .court-list-item, .court-item"
     );
 
     scrollRevealElements.forEach((element) => {
@@ -46,7 +58,7 @@ export const useScrollReveal = () => {
         observer.unobserve(element);
       });
     };
-  }, []);
+  }, [location.pathname]);
 };
 
 /**

@@ -24,11 +24,11 @@ const Privacy = () => {
 
       <div className="section animate-fade-up">
         <div className="container" style={{ maxWidth: "800px" }}>
-          <p className="text-sm text-light mb-lg">
+          <p className="text-sm text-light mb-lg scroll-reveal">
             Last Updated: February 1, 2026
           </p>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>1. Introduction</h3>
             <p>
               Legal Empire ("we," "our," or "us") respects your privacy and is
@@ -40,7 +40,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>2. Attorney-Client Privilege</h3>
             <p>
               <strong>Important:</strong> Submitting a form or contacting us via
@@ -52,7 +52,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>3. Information We Collect</h3>
             <p>
               <strong>Personal Information:</strong>
@@ -89,7 +89,7 @@ const Privacy = () => {
             </ul>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>4. How We Use Your Information</h3>
             <p>We use the information we collect to:</p>
             <ul
@@ -110,7 +110,7 @@ const Privacy = () => {
             </ul>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>5. Information Sharing and Disclosure</h3>
             <p>
               We do not sell or rent your personal information to third parties.
@@ -137,7 +137,7 @@ const Privacy = () => {
             </ul>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>6. Data Security</h3>
             <p>
               We implement reasonable security measures to protect your personal
@@ -150,7 +150,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>7. Cookies and Tracking</h3>
             <p>
               Our website uses cookies to enhance your browsing experience.
@@ -160,7 +160,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>8. Third-Party Links</h3>
             <p>
               Our website may contain links to third-party websites. We are not
@@ -170,7 +170,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>9. Your Rights</h3>
             <p>You have the right to:</p>
             <ul
@@ -189,7 +189,7 @@ const Privacy = () => {
             </ul>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>10. Children's Privacy</h3>
             <p>
               Our website and services are not intended for children under 18
@@ -200,7 +200,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>11. Changes to This Privacy Policy</h3>
             <p>
               We may update this Privacy Policy from time to time. We will
@@ -211,7 +211,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>12. Jurisdiction and Applicable Law</h3>
             <p>
               This Privacy Policy is governed by the laws of India, specifically
@@ -221,7 +221,7 @@ const Privacy = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>13. Contact Us</h3>
             <p>
               If you have questions about this Privacy Policy or our privacy

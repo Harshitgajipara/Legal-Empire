@@ -57,7 +57,7 @@ const Home = () => {
                 Litigation, or navigating a Divorce.
               </p>
 
-              <div className="court-list animate-fade-up scroll-reveal-stagger">
+              <div className="court-list">
                 <div className="court-list-item scroll-reveal">
                   <CheckCircle size={18} /> <span>Gujarat High Court</span>
                 </div>
@@ -205,7 +205,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>    
 
       {/* CTA Section */}
       <section className="section cta-section text-center">

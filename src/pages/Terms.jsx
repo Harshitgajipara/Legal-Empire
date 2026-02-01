@@ -24,11 +24,11 @@ const Terms = () => {
 
       <div className="section animate-fade-up">
         <div className="container" style={{ maxWidth: "800px" }}>
-          <p className="text-sm text-light mb-lg">
+          <p className="text-sm text-light mb-lg scroll-reveal">
             Last Updated: February 1, 2026
           </p>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>1. Agreement to Terms</h3>
             <p>
               These Terms of Service constitute a legally binding agreement
@@ -40,7 +40,7 @@ const Terms = () => {
           </div>
 
           <div
-            className="mb-lg"
+            className="mb-lg scroll-reveal"
             style={{
               padding: "1.5rem",
               backgroundColor: "var(--color-background)",
@@ -66,7 +66,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg" style={{ marginTop: "2rem" }}>
+          <div className="mb-lg scroll-reveal" style={{ marginTop: "2rem" }}>
             <h3>3. Website Content</h3>
             <p>
               The content on our website, including text, graphics, logos,
@@ -79,7 +79,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>4. Prohibited Activities</h3>
             <p>You agree not to:</p>
             <ul
@@ -105,7 +105,7 @@ const Terms = () => {
             </ul>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>5. Limitation of Liability</h3>
             <p>
               <strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong> Legal
@@ -117,7 +117,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>6. Fee Structure and Payment Terms</h3>
             <p>
               Our legal fees are discussed and agreed upon in the engagement
@@ -129,7 +129,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>7. Confidentiality and Privilege</h3>
             <p>
               Once an attorney-client relationship is established,
@@ -141,7 +141,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>8. Disclaimer of Warranties</h3>
             <p>
               Our website and services are provided "AS IS" and "AS AVAILABLE"
@@ -153,7 +153,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>9. Third-Party Links</h3>
             <p>
               Our website may contain links to third-party websites. We are not
@@ -163,7 +163,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>10. Termination of Services</h3>
             <p>
               Legal Empire reserves the right to terminate or suspend services
@@ -175,7 +175,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>11. Conflicts of Interest</h3>
             <p>
               We conduct conflict checks before accepting new clients. We
@@ -186,7 +186,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>12. Jurisdictional Matters</h3>
             <p>
               These terms are governed by the laws of India, specifically the
@@ -197,7 +197,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>13. Professional Responsibilities</h3>
             <p>
               Legal Empire adheres to the standards of professional conduct
@@ -209,7 +209,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>14. Changes to Terms</h3>
             <p>
               We reserve the right to modify these terms at any time. Changes
@@ -219,7 +219,7 @@ const Terms = () => {
             </p>
           </div>
 
-          <div className="mb-lg">
+          <div className="mb-lg scroll-reveal">
             <h3>15. Contact Information</h3>
             <p>
               For questions regarding these terms or our services, please

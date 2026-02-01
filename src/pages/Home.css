@@ -322,11 +322,12 @@
 .court-list-item.scroll-reveal {
   opacity: 0;
   transform: translateX(-30px);
-  transition: all 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .court-list-item.scroll-reveal.active {
-  opacity: 1;
+  opacity: 1 !important;
   transform: translateX(0);
 }
 
@@ -388,14 +389,28 @@
   transform: translateY(0);
 }
 
-/* Court List Item Scroll Animation */
-.court-list-item {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+/* Stagger delays for court list items to prevent blinking */
+.court-list-item:nth-child(1).scroll-reveal.active {
+  transition-delay: 0s;
+  opacity: 1 !important;
 }
 
-.court-list-item.active {
-  opacity: 1;
-  transform: translateY(0);
+.court-list-item:nth-child(2).scroll-reveal.active {
+  transition-delay: 0.05s;
+  opacity: 1 !important;
+}
+
+.court-list-item:nth-child(3).scroll-reveal.active {
+  transition-delay: 0.1s;
+  opacity: 1 !important;
+}
+
+.court-list-item:nth-child(4).scroll-reveal.active {
+  transition-delay: 0.15s;
+  opacity: 1 !important;
+}
+
+.court-list-item:nth-child(5).scroll-reveal.active {
+  transition-delay: 0.2s;
+  opacity: 1 !important;
 }

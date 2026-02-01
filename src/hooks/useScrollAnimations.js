@@ -24,6 +24,14 @@ export const useScrollAnimations = () => {
     const location = useLocation();
 
     useLayoutEffect(() => {
+        // Reset scroll to top on page navigation
+        window.scrollTo(0, 0);
+        
+        // Remove all 'active' classes when navigating to ensure fresh animations
+        document.querySelectorAll('.scroll-reveal.active, .scroll-reveal-left.active, .scroll-reveal-right.active, .scroll-reveal-stagger.active, .text-reveal.active, .court-list-item.active').forEach(el => {
+            el.classList.remove('active');
+        });
+
         // Accessibility Check
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -47,11 +55,11 @@ export const useScrollAnimations = () => {
                 ease: "power3.out", // Smooth, professional deceleration
             };
 
-            const triggerConfig = (triggerEl, start = "top 75%") => ({
+            const triggerConfig = (triggerEl, start = "top 100%") => ({
                 trigger: triggerEl,
                 start: start,
-                toggleActions: "play none none none", // Animate once, don't reverse
-                once: true, // Trigger only once - prevent re-animation on scroll back
+                toggleActions: "play reverse play reverse", // Play on enter, reverse on leave, play again on re-enter, reverse on leave again
+                once: false, // Allow re-triggering when scrolling back
             });
 
             // 1. Fade Up Elements (Use for Headings, P, Single Images)
@@ -110,9 +118,10 @@ export const useScrollAnimations = () => {
             scrollReveals.forEach(el => {
                 ScrollTrigger.create({
                     trigger: el,
-                    start: "top 75%",
-                    once: true, // Trigger only once - prevent re-animation on scroll back
+                    start: "top 100%",
+                    once: false, // Allow re-triggering when scrolling back
                     onEnter: () => el.classList.add('active'),
+                    onLeaveBack: () => el.classList.remove('active'), // Remove when scrolling back up
                 });
             });
 
@@ -121,9 +130,10 @@ export const useScrollAnimations = () => {
             scrollRevealsLeft.forEach(el => {
                 ScrollTrigger.create({
                     trigger: el,
-                    start: "top 75%",
-                    once: true, // Trigger only once
+                    start: "top 100%",
+                    once: false, // Allow re-triggering when scrolling back
                     onEnter: () => el.classList.add('active'),
+                    onLeaveBack: () => el.classList.remove('active'), // Remove when scrolling back up
                 });
             });
 
@@ -132,9 +142,10 @@ export const useScrollAnimations = () => {
             scrollRevealsRight.forEach(el => {
                 ScrollTrigger.create({
                     trigger: el,
-                    start: "top 75%",
-                    once: true, // Trigger only once
+                    start: "top 100%",
+                    once: false, // Allow re-triggering when scrolling back
                     onEnter: () => el.classList.add('active'),
+                    onLeaveBack: () => el.classList.remove('active'), // Remove when scrolling back up
                 });
             });
 
@@ -143,9 +154,10 @@ export const useScrollAnimations = () => {
             scrollRevealsStagger.forEach(el => {
                 ScrollTrigger.create({
                     trigger: el,
-                    start: "top 75%",
-                    once: true, // Trigger only once
+                    start: "top 100%",
+                    once: false, // Allow re-triggering when scrolling back
                     onEnter: () => el.classList.add('active'),
+                    onLeaveBack: () => el.classList.remove('active'), // Remove when scrolling back up
                 });
             });
 
@@ -154,9 +166,10 @@ export const useScrollAnimations = () => {
             textReveals.forEach(el => {
                 ScrollTrigger.create({
                     trigger: el,
-                    start: "top 75%",
-                    once: true, // Trigger only once
+                    start: "top 100%",
+                    once: false, // Allow re-triggering when scrolling back
                     onEnter: () => el.classList.add('active'),
+                    onLeaveBack: () => el.classList.remove('active'), // Remove when scrolling back up
                 });
             });
 
